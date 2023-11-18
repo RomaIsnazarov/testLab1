@@ -22,3 +22,6 @@ Route::get('/sum', [HomeController::class, 'sum']);
 
 Route::get('/diff', [HomeController::class, 'diff'])
 ->name('diff');
+
+Route::get('/multiplay', [HomeController::class, 'multiplay'])
+    ->name('multiplay');

@@ -20,4 +20,11 @@ class HomeController extends Controller
         $b = $request->b;
         return view('diff', ['diff' => $a - $b]);
     }
+
+    public function multiplay(Request $request)
+    {
+        $a = $request->a;
+        $b = $request->b;
+        return view('multiplay', ['multiplay' => $a * $b]);
+    }
 }
